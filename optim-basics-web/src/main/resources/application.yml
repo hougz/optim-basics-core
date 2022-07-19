@@ -11,3 +11,27 @@ spring:
       hibernate:
         #hibernate方言
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: basics-web
+logging:
+  level:
+    #解决swagger报错问题
+    io.swagger.models.parameters.AbstractSerializableParameter: error
+#hystrix的超时时间
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000
+#ribbon的超时时间
+ribbon:
+  ReadTimeout: 30000
+  ConnectTimeout: 30000

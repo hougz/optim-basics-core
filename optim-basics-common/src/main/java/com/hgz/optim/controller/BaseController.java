@@ -3,6 +3,7 @@ package com.hgz.optim.controller;
 
 import com.hgz.optim.entity.BaseEntity;
 import com.hgz.optim.service.BaseService;
+import com.hgz.optim.util.ConverterFieldUtil;
 import com.hgz.optim.util.PageInfo;
 import com.hgz.optim.util.PageUtils;
 import com.hgz.optim.util.Result;
@@ -61,6 +62,7 @@ public abstract class BaseController<V extends BaseVo, E extends BaseEntity> {
     public Result<?> page(V vo) {
         Page<E> page = service.page(vo.getCurrentPage(), vo.getPageSize(), vo);
         PageInfo<E> pageInfo = PageUtils.converts(page);
+        ConverterFieldUtil.fieldValue(pageInfo.getRecords());
         return Result.success(pageInfo);
     }
 
@@ -68,6 +70,7 @@ public abstract class BaseController<V extends BaseVo, E extends BaseEntity> {
     @GetMapping("/query")
     public Result<?> list(V vo) {
         List<E> list = service.list(vo);
+        ConverterFieldUtil.fieldValue(list);
         return Result.success(list);
     }
 

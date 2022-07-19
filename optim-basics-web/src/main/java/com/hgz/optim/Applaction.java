@@ -2,15 +2,16 @@ package com.hgz.optim;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @author hgz
  * @version 1.0
  * @date 2022/7/4 20:11
  */
-/*@EntityScan("com.hgz.optim.jpa")
-@ComponentScan(value="com.hgz.optim")
-@EnableJpaRepositories(basePackages = "com.hgz.optim.jpa")*/
+@EnableDiscoveryClient
+@EnableFeignClients
 @SpringBootApplication
 public class Applaction {
 

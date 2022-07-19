@@ -1,0 +1,28 @@
+
+spring:
+  application:
+    name: optim-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        #将路径为Path=/api/basics-web转发basics-web微服务
+        - id: basics-web
+          uri: lb://basics-web
+          predicates:
+            - Path=/v1/api/**
+          filters:
+            - RewritePath=/v1/(?<segment>/?.*),/$\{segment}
+        - id: basics-sms
+          uri: lb://basics-sms
+          predicates:
+            - Path=/v1/api/**
+          filters:
+            - RewritePath=/v1/(?<segment>/?.*),/$\{segment}
+server:
+  port: 88

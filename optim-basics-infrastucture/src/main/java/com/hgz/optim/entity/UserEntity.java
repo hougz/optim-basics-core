@@ -1,11 +1,14 @@
 package com.hgz.optim.entity;
 
+import com.hgz.optim.annation.TransformAtion;
+import com.hgz.optim.service.AddressService;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import java.io.Serializable;
 
 /**
@@ -28,5 +31,9 @@ public class UserEntity extends BaseEntity implements Serializable {
     private String mobile;
 
     private String address;
+
+    @Transient
+    @TransformAtion(from = "address", converter = AddressService.class)
+    private String alias;
 
 }

@@ -9,8 +9,12 @@
         <module name="optim-basics-bean" />
         <module name="optim-basics-common" />
         <module name="optim-basics-domain" />
+        <module name="optim-basics-feign" />
+        <module name="optim-basics-gateway" />
         <module name="optim-basics-infrastucture" />
         <module name="optim-basics-msg" />
+        <module name="optim-basics-oauth2" />
+        <module name="optim-basics-sms" />
         <module name="optim-basics-web" />
       </profile>
     </annotationProcessing>
@@ -20,8 +24,12 @@
       <module name="optim-basics-bean" options="-parameters" />
       <module name="optim-basics-common" options="-parameters" />
       <module name="optim-basics-domain" options="-parameters" />
+      <module name="optim-basics-feign" options="-parameters" />
+      <module name="optim-basics-gateway" options="-parameters" />
       <module name="optim-basics-infrastucture" options="-parameters" />
       <module name="optim-basics-msg" options="-parameters" />
+      <module name="optim-basics-oauth2" options="-parameters" />
+      <module name="optim-basics-sms" options="-parameters" />
       <module name="optim-basics-web" options="-parameters" />
     </option>
   </component>

@@ -25,10 +25,10 @@ import java.util.Optional;
  */
 public abstract class BaseService<E extends BaseEntity, V extends BaseVo> {
 
-    @Autowired
+    @Autowired(required = false)
     private BaseRepository<E> repository;
 
-    @Autowired
+    @Autowired(required = false)
     private BeanMapper<V, E> mapper;
 
     /**

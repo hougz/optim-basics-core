@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Api(tags = "学生管理")
 @RestController
-@RequestMapping("/api/v1/student")
+@RequestMapping("/api/student")
 public class StudentController extends BaseController<StudentVo, StudentEntity> {
 
     private final StudentService studentService;
