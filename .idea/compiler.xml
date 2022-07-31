@@ -15,6 +15,8 @@
         <module name="optim-basics-msg" />
         <module name="optim-basics-oauth2" />
         <module name="optim-basics-sms" />
+        <module name="optim-basics-tool" />
+        <module name="optim-basics-uat" />
         <module name="optim-basics-web" />
       </profile>
     </annotationProcessing>
@@ -30,6 +32,8 @@
       <module name="optim-basics-msg" options="-parameters" />
       <module name="optim-basics-oauth2" options="-parameters" />
       <module name="optim-basics-sms" options="-parameters" />
+      <module name="optim-basics-tool" options="-parameters" />
+      <module name="optim-basics-uat" options="-parameters" />
       <module name="optim-basics-web" options="-parameters" />
     </option>
   </component>

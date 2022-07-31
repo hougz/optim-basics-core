@@ -59,10 +59,9 @@ public class BeanContexHolder implements ApplicationContextAware {
         return context.getBean(beanName, clazz);
     }
 
-    public static <T> List<T> getBeanForType(Class<T> beanClass) {
+    public static <T> Map<String, T> getBeanForType(Class<T> beanClass) {
         DefaultListableBeanFactory factory = (DefaultListableBeanFactory) context.getAutowireCapableBeanFactory();
-        Map<String, T> beans = factory.getBeansOfType(beanClass);
-        return new ArrayList<>(beans.values());
+        return factory.getBeansOfType(beanClass);
     }
 
 

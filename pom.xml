@@ -19,6 +19,8 @@
         <module>optim-basics-sms</module>
         <module>optim-basics-feign</module>
         <module>optim-basics-gateway</module>
+        <module>optim-basics-uat</module>
+        <module>optim-basics-tool</module>
     </modules>
 
 

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hgz.optim.dao.UserDao" >
+
+    <sql id="columns" >id ,user_name ,pass_word ,mobile ,address ,STATUS ,create_by</sql>
+
+    <select id="selectById" resultType="com.hgz.optim.entity.UserEntity" parameterType="java.lang.Long">
+        select * from user where id = #{id}
+    </select>
+
+    <select id="getList" resultType="com.hgz.optim.entity.UserEntity">
+        select * from user where user_name = #{userName}
+    </select>
+
+    <select id="get" resultType="com.hgz.optim.entity.UserEntity">
+        select * from user where user_name = #{userName} and pass_word=#{passWord};
+    </select>
+
+    <select id="count" resultType="java.lang.Long">
+        select count(*) from user ;
+    </select>
+
+    <select id="selectLike" resultType="com.hgz.optim.entity.UserEntity">
+        <!--passWord就是传入的参数，bind相当于是一个参数，这个参数的值就是value拼接出来的值-->
+        <bind name="passWord" value="'%' + passWord + '%'" />
+        select * from user where user_name = #{userName} and pass_word like #{passWord};
+    </select>
+
+    <select id="selectList" resultType="com.hgz.optim.entity.UserEntity">
+        select <include refid="columns"></include> from user u
+        <where>
+            <if test="userName != null and userName != ''">
+                and u.user_name =#{userName}
+            </if>
+            <if test="passWord != null and passWord !=''">
+            <!--concat 只适合mysql-->
+                and u.pass_word like concat('%', #{passWord}, '%')
+            </if>
+        </where>
+    </select>
+
+
+    <select id="selectEntity" resultType="com.hgz.optim.entity.UserEntity">
+        select <include refid="columns"></include> from user u
+        <where>
+            <if test="userName != null and userName != ''">
+                and u.user_name =#{userName}
+            </if>
+            <if test="passWord != null and passWord !=''">
+                <!--concat 只适合mysql-->
+                and u.pass_word like concat('%', #{passWord}, '%')
+            </if>
+        </where>
+    </select>
+
+
+    <select id="selectEntity2" resultType="com.hgz.optim.entity.UserEntity">
+        select <include refid="columns"></include> from user u
+        <where>
+            <if test="userName != null and userName != ''">
+                and u.user_name =#{userName}
+            </if>
+            <if test="passWord != null and passWord !=''">
+                <!--concat 只适合mysql-->
+                and u.pass_word like concat('%', #{passWord}, '%')
+            </if>
+        </where>
+    </select>
+
+
+    <select id="selectIn" resultType="com.hgz.optim.entity.UserEntity">
+        select <include refid="columns"></include> from user u
+        where u.id in
+        <foreach collection="list" item="id" index="index" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </select>
+
+
+    <select id="selectMobileIn" resultType="com.hgz.optim.entity.UserEntity">
+        select <include refid="columns"></include> from user u
+        where u.mobile in
+        <foreach collection="list" item="mobile" index="index" open="(" close=")" separator=",">
+            #{mobile}
+        </foreach>
+    </select>
+
+</mapper>

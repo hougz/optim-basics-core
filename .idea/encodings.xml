@@ -11,6 +11,8 @@
     <file url="file://$PROJECT_DIR$/optim-basics-msg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/optim-basics-oauth2" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/optim-basics-sms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optim-basics-tool" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optim-basics-uat" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/optim-basics-web" charset="UTF-8" />
   </component>
 </project>

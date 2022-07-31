@@ -1,6 +1,8 @@
 package com.hgz.optim.entity;
 
 import com.hgz.optim.annation.TransformAtion;
+import com.hgz.optim.jackson.JacksonSensitive;
+import com.hgz.optim.jackson.SensitiveStrategy;
 import com.hgz.optim.service.AddressService;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -23,11 +25,12 @@ import java.io.Serializable;
 @ToString(callSuper = true)
 public class UserEntity extends BaseEntity implements Serializable {
 
-
+    @JacksonSensitive(strategy = SensitiveStrategy.USERNAME)
     private String userName;
 
     private String passWord;
 
+    @JacksonSensitive(strategy = SensitiveStrategy.PHONE)
     private String mobile;
 
     private String address;

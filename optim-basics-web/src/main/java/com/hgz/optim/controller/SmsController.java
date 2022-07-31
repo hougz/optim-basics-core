@@ -39,4 +39,6 @@ public class SmsController {
         smsFeign.smsSend(file, emailVo.getEmail(),emailVo.getContact(),emailVo.getTitle(),emailVo.getSubject(),emailVo.getMobile());
         return Result.success();
     }
+
+
 }

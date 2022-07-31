@@ -45,9 +45,9 @@ public abstract class BaseController<V extends BaseVo, E extends BaseEntity> {
 
     @ApiOperation("查询")
     @GetMapping("/{id}")
-    public Result<?> get(@PathVariable("id") Long id) {
+    public E get(@PathVariable("id") Long id) {
         E e = service.findId(id);
-        return Result.success(e);
+        return e;
     }
 
     @ApiOperation("删除")
@@ -59,11 +59,11 @@ public abstract class BaseController<V extends BaseVo, E extends BaseEntity> {
 
     @ApiOperation("分页查询")
     @GetMapping
-    public Result<?> page(V vo) {
+    public PageInfo<E> page(V vo) {
         Page<E> page = service.page(vo.getCurrentPage(), vo.getPageSize(), vo);
         PageInfo<E> pageInfo = PageUtils.converts(page);
         ConverterFieldUtil.fieldValue(pageInfo.getRecords());
-        return Result.success(pageInfo);
+        return pageInfo;
     }
 
     @ApiOperation("条件查询")
