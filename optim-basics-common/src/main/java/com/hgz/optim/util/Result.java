@@ -41,8 +41,8 @@ public class Result<T> implements Serializable {
         return new Result(ResultEnum.SUCCESS.getCode(), ResultEnum.SUCCESS.getMessage());
     }
 
-    public static Result success(Object data) {
-        return new Result(ResultEnum.SUCCESS.getCode(), ResultEnum.SUCCESS.getMessage(), data);
+    public static Result<?> success(Object data) {
+        return new Result<>(ResultEnum.SUCCESS.getCode(), ResultEnum.SUCCESS.getMessage(), data);
     }
 
     public static Result error(Integer code, String message) {

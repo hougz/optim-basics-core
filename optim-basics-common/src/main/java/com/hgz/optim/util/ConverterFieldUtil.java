@@ -28,7 +28,9 @@ public class ConverterFieldUtil {
      * @param <T>
      */
     public static <T> void fieldValue(List<T> list) {
-        if (CollectionUtils.isEmpty(list)) return;
+        if (CollectionUtils.isEmpty(list)) {
+            return;
+        }
         T t = list.get(0);
         Class<?> aClass = t.getClass();
         ReflectionUtils.doWithFields(aClass, field -> {
@@ -36,9 +38,13 @@ public class ConverterFieldUtil {
             TransformAtion annotation = field.getAnnotation(TransformAtion.class);
             if (annotation != null) {
                 Field fromField = ReflectionUtils.findField(aClass, annotation.from());
-                if (fromField == null) return;
+                if (fromField == null) {
+                    return;
+                }
                 Set<String> set = collectFieldValues(list, fromField);
-                if (set.isEmpty()) return;
+                if (set.isEmpty()) {
+                    return;
+                }
                 Map<String, String> map = convertFieldValues(annotation, set);
                 assignmentFieldValues(map, list, fromField, field);
             }
@@ -57,7 +63,9 @@ public class ConverterFieldUtil {
         Set<String> values = new HashSet<>();
         for (T t : list) {
             String value = (String) ReflectionUtils.getField(field, t);
-            if (!StringUtils.isEmpty(value)) values.add(value);
+            if (!StringUtils.isEmpty(value)) {
+                values.add(value);
+            }
         }
         return values;
     }

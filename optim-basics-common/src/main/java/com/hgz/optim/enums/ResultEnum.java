@@ -14,10 +14,25 @@ import lombok.ToString;
 @ToString
 public enum ResultEnum {
 
-    SUCCESS(200,"success"),
-    ERROR(500,"服务端异常"),
-    SESSION_ERROR(500200,"session不存在或已失效"),
-    LOGINVO_ERROR(500201,"用户名或密码错误");
+    /**
+     * 成功
+     */
+    SUCCESS(200, "success"),
+
+    /**
+     * 失败
+     */
+    ERROR(500, "服务端异常"),
+
+    /**
+     * session不存在或已失效
+     */
+    SESSION_ERROR(500200, "session不存在或已失效"),
+
+    /**
+     * 用户名或密码错误
+     */
+    LOGINVO_ERROR(500201, "用户名或密码错误");
 
 
     private final Integer code;

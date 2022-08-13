@@ -2,6 +2,8 @@
 spring:
   application:
     name: optim-gateway
+  main:
+    allow-bean-definition-overriding: true
   cloud:
     nacos:
       discovery:
@@ -15,14 +17,20 @@ spring:
         - id: basics-web
           uri: lb://basics-web
           predicates:
-            - Path=/v1/api/**
+            - Path=/basics-web/api/v1/**
           filters:
-            - RewritePath=/v1/(?<segment>/?.*),/$\{segment}
+            - RewritePath=/basics-web/(?<segment>/?.*),/$\{segment}
         - id: basics-sms
           uri: lb://basics-sms
           predicates:
-            - Path=/v1/api/**
+            - Path=/basics-sms/api/v1/**
           filters:
-            - RewritePath=/v1/(?<segment>/?.*),/$\{segment}
+            - RewritePath=/basics-sms/(?<segment>/?.*),/$\{segment}
+        - id: basics-token
+          uri: lb://basics-token
+          predicates:
+            - Path=/basics-token/**
+          filters:
+            - RewritePath=/basics-token/(?<segment>/?.*),/$\{segment}
 server:
   port: 88

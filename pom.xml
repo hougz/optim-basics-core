@@ -21,6 +21,7 @@
         <module>optim-basics-gateway</module>
         <module>optim-basics-uat</module>
         <module>optim-basics-tool</module>
+        <module>optim-basics-design-mode</module>
     </modules>
 
 

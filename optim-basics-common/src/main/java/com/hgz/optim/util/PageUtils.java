@@ -21,7 +21,10 @@ public class PageUtils {
     public static <T> PageInfo<T> converts(Page<T> page) {
         PageInfo<T> pageInfo = new PageInfo<>();
         pageInfo.setPageSize(page.getSize());
-        pageInfo.setCurrentPage(page.getNumber() + 1);//jpa页码从0开始
+        /**
+         * jpa页码从0开始
+         */
+        pageInfo.setCurrentPage(page.getNumber() + 1);
         pageInfo.setTotalPages(page.getTotalPages());
         pageInfo.setTotalRecords(page.getTotalElements());
         pageInfo.setRecords(page.getContent());

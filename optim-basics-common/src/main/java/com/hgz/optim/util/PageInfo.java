@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 /**
+ * 统一分页类
+ *
  * @author hgz
  * @version 1.0
  * @date 2022/3/12 9:25

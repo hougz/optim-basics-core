@@ -11,13 +11,10 @@ import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
-import springfox.documentation.spring.web.json.Json;
-import springfox.documentation.swagger.web.SwaggerResource;
-import springfox.documentation.swagger.web.UiConfiguration;
-
-import java.util.ArrayList;
 
 /**
+ * 统一返回值处理
+ *
  * @author hgz
  * @version 1.0
  * @date 2022/7/25 20:31

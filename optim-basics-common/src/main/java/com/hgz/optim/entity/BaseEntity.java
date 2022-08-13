@@ -20,8 +20,10 @@ import java.time.LocalDateTime;
 @MappedSuperclass
 public class BaseEntity implements Serializable {
 
+    /**
+     * 指定id生成策略为自增
+     */
     @Id
-    //指定id生成策略为自增
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 

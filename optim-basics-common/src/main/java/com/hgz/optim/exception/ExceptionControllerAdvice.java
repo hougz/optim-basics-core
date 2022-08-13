@@ -50,7 +50,12 @@ public class ExceptionControllerAdvice {
     }
 
 
-    // 拦截抛出的异常，@ResponseStatus：用来改变响应状态码
+    /**
+     * 拦截抛出的异常，@ResponseStatus：用来改变响应状态码
+     * @param e
+     * @param request
+     * @return
+     */
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(Exception.class)
     public Result handlerThrowable(Throwable e, HttpServletRequest request) {

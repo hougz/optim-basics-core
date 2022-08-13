@@ -1,42 +1,25 @@
 package com.hgz.optim.entity;
 
-import com.hgz.optim.annation.TransformAtion;
-import com.hgz.optim.jackson.JacksonSensitive;
-import com.hgz.optim.jackson.SensitiveStrategy;
-import com.hgz.optim.service.AddressService;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
 
 import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Transient;
-import java.io.Serializable;
 
 /**
+ * 用戶信息表
+ *
  * @author hgz
  * @version 1.0
- * @date 2022/6/11 16:37
+ * @date 2022/8/10 20:58
  */
-@EqualsAndHashCode(callSuper = true)
 @Data
-@Entity
-@Table(name = "optim_user")
-@ToString(callSuper = true)
-public class UserEntity extends BaseEntity implements Serializable {
+@Entity(name = "h_user")
+public class UserEntity extends BaseEntity {
 
-    @JacksonSensitive(strategy = SensitiveStrategy.USERNAME)
-    private String userName;
+    private String username;
 
-    private String passWord;
+    private String password;
 
-    @JacksonSensitive(strategy = SensitiveStrategy.PHONE)
     private String mobile;
 
-    private String address;
-
-    @Transient
-    @TransformAtion(from = "address", converter = AddressService.class)
-    private String alias;
-
+    private String status;
 }

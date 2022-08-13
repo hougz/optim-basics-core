@@ -7,9 +7,28 @@ package com.hgz.optim.enums;
  */
 public enum QueryOperator {
 
+    /**
+     * 等于
+     */
     EQ,
+
+    /**
+     * 模糊查询
+     */
     LIKE,
+
+    /**
+     * in
+     */
     IN,
+
+    /**
+     * 大于等于
+     */
     GQ,
+
+    /**
+     * 小于等于
+     */
     LQ
 }

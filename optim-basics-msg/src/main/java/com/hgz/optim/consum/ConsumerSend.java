@@ -1,16 +1,18 @@
 package com.hgz.optim.consum;
 
-import com.hgz.optim.consum.service.ConsumerService;
+
+import com.hgz.optim.annation.MqListener;
+import com.hgz.optim.enums.MqTopicEnum;
+import com.hgz.optim.msg.us.ConsumerService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
 
 /**
  * @author hgz
  * @version 1.0
  * @date 2022/7/23 19:13
  */
-@Component
 @Slf4j
+@MqListener(topic = MqTopicEnum.PUBLIC, tags = "send")
 public class ConsumerSend implements ConsumerService {
 
 

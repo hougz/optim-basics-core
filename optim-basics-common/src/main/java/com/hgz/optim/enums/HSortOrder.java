@@ -7,7 +7,14 @@ package com.hgz.optim.enums;
  */
 public enum HSortOrder {
 
-    DESC, //降序
+    /**
+     * 降序
+     */
+    DESC,
 
-    ASC   //升序
+
+    /**
+     * 升序
+     */
+    ASC
 }

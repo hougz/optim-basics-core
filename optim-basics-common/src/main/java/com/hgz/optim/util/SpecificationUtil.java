@@ -27,7 +27,9 @@ public class SpecificationUtil {
                 ReflectionUtils.makeAccessible(field);
                 //字段值为null或者""，直接返回
                 Object value = ReflectionUtils.getField(field, params);
-                if (value == null || (field.getType() == String.class && "".equals(value))) return;
+                if (value == null || (field.getType() == String.class && "".equals(value))) {
+                    return;
+                }
 
                 HQuery hQuery = field.getAnnotation(HQuery.class);
                 String searchName;

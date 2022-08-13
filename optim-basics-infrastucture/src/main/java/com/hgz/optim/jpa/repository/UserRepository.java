@@ -7,8 +7,10 @@ import org.springframework.stereotype.Repository;
 /**
  * @author hgz
  * @version 1.0
- * @date 2022/7/9 15:54
+ * @date 2022/8/10 21:03
  */
 @Repository
 public interface UserRepository extends BaseRepository<UserEntity> {
+
+    UserEntity findByUsername(String userName);
 }

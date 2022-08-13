@@ -6,8 +6,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -18,11 +16,14 @@ import java.util.Map;
 @Component
 public class BeanContexHolder implements ApplicationContextAware {
 
-    private static ApplicationContext context; //应用上下文环境
+    /**
+     * 应用上下文环境
+     */
+    private static ApplicationContext context;
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        this.context = applicationContext;
+        context = applicationContext;
     }
 
     /**

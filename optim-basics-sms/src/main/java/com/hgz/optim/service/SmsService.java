@@ -1,13 +1,16 @@
 package com.hgz.optim.service;
 
 import com.hgz.bean.vo.EmailVo;
+import freemarker.template.Template;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
+import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 
@@ -15,6 +18,8 @@ import javax.mail.internet.MimeMessage;
 import java.io.File;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author hgz
@@ -43,7 +48,7 @@ public class SmsService {
      * @param emailVo
      * @return
      */
-    public void sendEmail(EmailVo emailVo,MultipartFile file) {
+    public void sendEmail(EmailVo emailVo, MultipartFile file) {
         File tempFile = null;
         try {
             MimeMessage mimeMessage = mailSender.createMimeMessage();
@@ -60,10 +65,10 @@ public class SmsService {
                 helper.addAttachment(file.getOriginalFilename(), file1);
             }
             //调用模板
-            /*Map<String, Object> model = new HashMap<>();
-            model.put("params", object);
-            Template template = freeMarkerConfigurer.getConfiguration().getTemplate(templateName);
-            String string = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);*/
+            Map<String, Object> model = new HashMap<>();
+            model.put("params", emailVo);
+            Template template = freeMarkerConfigurer.getConfiguration().getTemplate("测试");
+            String string = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
             //邮件内容
             helper.setText(emailVo.getContact(), true);
             //发送邮件
@@ -72,13 +77,7 @@ public class SmsService {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (tempFile != null) {
-                    tempFile.delete();
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            FileUtils.deleteQuietly(tempFile);
         }
     }
 }

@@ -24,11 +24,15 @@ public final class SortUtil {
         ReflectionUtils.doWithFields(clazz, field -> {
             ReflectionUtils.makeAccessible(field);
             HSort annotation = field.getAnnotation(HSort.class);
-            if (annotation == null) return;
+            if (annotation == null) {
+                return;
+            }
             fields.add(field);
         });
 
-        if (fields.isEmpty()) return null;
+        if (fields.isEmpty()) {
+            return null;
+        }
 
         fields.sort((field1, field2) -> {
             HSort sort1 = field1.getAnnotation(HSort.class);

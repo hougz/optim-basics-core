@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @version 1.0
  * @date 2022/7/13 20:44
  */
+
 @SpringBootApplication
 public class OauthApplication {
 

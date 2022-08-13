@@ -15,7 +15,7 @@ import java.nio.charset.StandardCharsets;
  * @version 1.0
  * @date 2022/7/24 11:02
  */
-@Component
+//@Component
 @Slf4j
 public class RocketMqProducerUtil {
 

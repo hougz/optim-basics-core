@@ -13,9 +13,15 @@ import lombok.Getter;
 public enum StatusEnum {
 
 
-    VALUE(1,"有效状态"),
+    /**
+     * 有效状态
+     */
+    VALUE(1, "有效状态"),
 
-    INVALUE(0,"无效状态");
+    /**
+     * 无效状态
+     */
+    INVALUE(0, "无效状态");
 
     private Integer code;
 

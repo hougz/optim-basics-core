@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="optim-basics-bean" />
         <module name="optim-basics-common" />
+        <module name="optim-basics-design-mode" />
         <module name="optim-basics-domain" />
         <module name="optim-basics-feign" />
         <module name="optim-basics-gateway" />
@@ -25,6 +26,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="optim-basics-bean" options="-parameters" />
       <module name="optim-basics-common" options="-parameters" />
+      <module name="optim-basics-design-mode" options="-parameters" />
       <module name="optim-basics-domain" options="-parameters" />
       <module name="optim-basics-feign" options="-parameters" />
       <module name="optim-basics-gateway" options="-parameters" />

@@ -1,65 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="446ddd0a-8ba9-46f8-97c0-977b394ef3d9" name="Default Changelist" comment="提交网关">
-      <change afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/config/ResponseAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/jackson/JacksonSensitive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/jackson/SensitiveJsonSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/jackson/SensitiveStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/MsgApplaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/config/RocketMqConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/config/RocketMqProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/ConsumerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/ConsumerReceive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/ConsumerSend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/service/ConsumerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/init/InitConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-msg/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-tool/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/Applaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/config/BeanConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/config/InitConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/service/CbcSendServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/service/NbcSendServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/service/SendService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-tool/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-tool/src/test/java/com/hgz/optim/SendTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-uat/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-uat/src/main/java/com/hgz/optim/UatApplaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-uat/src/main/java/com/hgz/optim/config/MybatisPageHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-uat/src/main/java/com/hgz/optim/dao/OptimUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-uat/src/main/java/com/hgz/optim/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-uat/src/main/java/com/hgz/optim/entity/OptimEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-uat/src/main/java/com/hgz/optim/entity/OptimUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-uat/src/main/java/com/hgz/optim/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-uat/src/main/java/com/hgz/optim/entity/UserVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-uat/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-uat/src/main/resources/mapper/OptimUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-uat/src/main/resources/mapper/UserDaoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-uat/src/test/java/com/hgz/optim/UserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/config/ProducerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/util/RocketMqProducerUtil.java" afterDir="false" />
+    <list default="true" id="446ddd0a-8ba9-46f8-97c0-977b394ef3d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/optim-basics-bean/src/main/java/com/hgz/bean/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/annation/MqListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/enums/MqTopicEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/EncryptUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/FreeMarkerUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-design-mode/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-design-mode/src/main/java/com/hgz/optim/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-design-mode/src/main/java/com/hgz/optim/zr/DoHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-design-mode/src/main/java/com/hgz/optim/zr/EndHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-design-mode/src/main/java/com/hgz/optim/zr/Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-design-mode/src/main/java/com/hgz/optim/zr/Receive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-design-mode/src/main/java/com/hgz/optim/zr/Send.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-design-mode/src/main/java/com/hgz/optim/zr/SendVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-design-mode/src/test/java/com/hgz/optim/HandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-domain/src/main/java/com/hgz/optim/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/ResouceServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/TokenConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/filter/AuthorizeFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/util/EncryptUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/config/AuthorizationServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/config/Swagger2Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/config/TokenConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/filter/TokenVerifyFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-oauth2/src/test/java/com/hgz/optim/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/config/ResouceServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/config/TokenConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/filter/TokenAuthenticationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-bean/src/main/java/com/hgz/bean/vo/EmailVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-bean/src/main/java/com/hgz/bean/vo/EmailVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-bean/src/main/java/com/hgz/bean/vo/StudentVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-bean/src/main/java/com/hgz/bean/vo/UserVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-bean/target/classes/com/hgz/bean/vo/StudentVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-bean/target/classes/com/hgz/bean/vo/UserVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/config/ResponseAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/config/ResponseAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/enums/HSortOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/enums/HSortOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/enums/QueryOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/enums/QueryOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/enums/ResultEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/enums/StatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/enums/StatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/exception/ExceptionControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/exception/ExceptionControllerAdvice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/BeanContexHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/BeanContexHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/controller/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/controller/BaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/ConverterFieldUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/ConverterFieldUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/PageInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/PageInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/PageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/PageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/SortUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/SortUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/SpecificationUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/SpecificationUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/vo/BaseVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/vo/BaseVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/entity/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/entity/BaseEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/enums/HSortOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/enums/HSortOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/enums/QueryOperator.class" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/enums/QueryOperator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/enums/ResultEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/enums/ResultEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/enums/StatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/enums/StatusEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/util/PageInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/util/PageInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/util/PageUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/util/PageUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/util/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/util/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/util/SortUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/util/SortUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/util/SpecificationUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/util/SpecificationUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/vo/BaseVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/target/classes/com/hgz/optim/vo/BaseVo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-domain/src/main/java/com/hgz/optim/service/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-domain/src/main/java/com/hgz/optim/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-domain/src/main/java/com/hgz/optim/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-domain/target/classes/com/hgz/optim/service/StudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-domain/target/classes/com/hgz/optim/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-domain/target/classes/com/hgz/optim/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-feign/src/main/java/com/hgz/optim/SmsFeign.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-infrastucture/src/main/java/com/hgz/optim/entity/StudentEntity.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/optim-basics-infrastucture/src/main/java/com/hgz/optim/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-infrastucture/src/main/java/com/hgz/optim/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-infrastucture/src/main/java/com/hgz/optim/jpa/repository/StudentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-infrastucture/src/main/java/com/hgz/optim/jpa/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-infrastucture/src/main/java/com/hgz/optim/jpa/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-infrastucture/target/classes/com/hgz/optim/entity/StudentEntity.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/optim-basics-infrastucture/target/classes/com/hgz/optim/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-infrastucture/target/classes/com/hgz/optim/entity/UserEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-infrastucture/target/classes/com/hgz/optim/jpa/repository/StudentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-infrastucture/target/classes/com/hgz/optim/jpa/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-infrastucture/target/classes/com/hgz/optim/jpa/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-msg/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-msg/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/config/RocketMqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/msg/us/RocketMqConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/config/RocketMqProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/msg/us/RocketMqProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/ConsumerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/msg/us/ConsumerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/ConsumerReceive.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/ConsumerReceive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/ConsumerSend.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/ConsumerSend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/service/ConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/msg/us/ConsumerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/init/InitConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/init/ApplicationInitConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/optim-basics-oauth2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-oauth2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/config/AuthorizationServerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/config/TokenConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/controller/AuthorizationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/controller/SmsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/controller/SmsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/optim-basics-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-web/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/optim-basics-web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-web/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/optim-basics-web/target/classes/com/hgz/optim/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-web/target/classes/com/hgz/optim/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/optim-basics-web/target/generated-sources/annotations/com/hgz/optim/mapper/StudentVoToEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-web/target/generated-sources/annotations/com/hgz/optim/mapper/StudentVoToEntityMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/optim-basics-web/target/generated-sources/annotations/com/hgz/optim/mapper/UserVoToEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-web/target/generated-sources/annotations/com/hgz/optim/mapper/UserVoToEntityMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/OauthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/OauthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-oauth2/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-oauth2/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-sms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-sms/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-sms/src/main/java/com/hgz/optim/controller/SmsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-sms/src/main/java/com/hgz/optim/controller/SmsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-sms/src/main/java/com/hgz/optim/service/SmsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-sms/src/main/java/com/hgz/optim/service/SmsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-tool/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-tool/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-uat/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-uat/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/config/ProducerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/controller/SmsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/controller/StudentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/mapper/StudentVoToEntityMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/mapper/UserVoToEntityMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/util/RocketMqProducerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/util/RocketMqProducerUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/src/test/java/com/hgz/optim/UserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/target/classes/com/hgz/optim/controller/StudentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/target/classes/com/hgz/optim/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/target/classes/com/hgz/optim/mapper/StudentVoToEntityMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/target/classes/com/hgz/optim/mapper/StudentVoToEntityMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/target/classes/com/hgz/optim/mapper/UserVoToEntityMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/target/classes/com/hgz/optim/mapper/UserVoToEntityMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/target/generated-sources/annotations/com/hgz/optim/mapper/StudentVoToEntityMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/target/generated-sources/annotations/com/hgz/optim/mapper/UserVoToEntityMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/optim-basics-web/target/test-classes/com/hgz/optim/UserTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -76,6 +139,7 @@
     <ignored path="$PROJECT_DIR$/optim-basics-gateway/target/" />
     <ignored path="$PROJECT_DIR$/optim-basics-uat/target/" />
     <ignored path="$PROJECT_DIR$/optim-basics-tool/target/" />
+    <ignored path="$PROJECT_DIR$/optim-basics-design-mode/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,39 +184,12 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/optim-basics-sms/src/main/java/com/hgz/optim/SmsApplaction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/optim-basics-web/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/optim-basics-sms/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/GateWayApplication.java">
+        <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/FreeMarkerUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="182">
+              <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -162,9 +199,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="AnnotationType" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -180,57 +217,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/optim-basics-oauth2/pom.xml" />
-        <option value="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/config/TokenConfig.java" />
-        <option value="$PROJECT_DIR$/optim-basics-uat/src/main/java/com/hgz/optim/UatApplaction.java" />
-        <option value="$PROJECT_DIR$/optim-basics-uat/src/main/java/com/hgz/optim/config/MybatisPageHelper.java" />
-        <option value="$PROJECT_DIR$/optim-basics-uat/src/main/java/com/hgz/optim/entity/UserEntity.java" />
-        <option value="$PROJECT_DIR$/optim-basics-uat/pom.xml" />
-        <option value="$PROJECT_DIR$/optim-basics-uat/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/optim-basics-uat/src/main/java/com/hgz/optim/entity/UserVo.java" />
-        <option value="$PROJECT_DIR$/optim-basics-uat/src/main/java/com/hgz/optim/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/optim-basics-uat/src/main/java/com/hgz/optim/entity/OptimUser.java" />
-        <option value="$PROJECT_DIR$/optim-basics-uat/src/main/resources/mapper/UserDaoMapper.xml" />
-        <option value="$PROJECT_DIR$/optim-basics-uat/src/main/java/com/hgz/optim/entity/OptimEntity.java" />
-        <option value="$PROJECT_DIR$/optim-basics-uat/src/main/java/com/hgz/optim/dao/OptimUserDao.java" />
-        <option value="$PROJECT_DIR$/optim-basics-uat/src/test/java/com/hgz/optim/UserTest.java" />
-        <option value="$PROJECT_DIR$/optim-basics-uat/src/main/resources/mapper/OptimUserMapper.xml" />
-        <option value="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/MsgApplaction.java" />
-        <option value="$PROJECT_DIR$/optim-basics-tool/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/config/Swagger2Config.java" />
-        <option value="$PROJECT_DIR$/optim-basics-msg/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/config/RocketMqProperties.java" />
-        <option value="$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/config/BeanConfig.java" />
-        <option value="$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/service/UserService.java" />
-        <option value="$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/Applaction.java" />
-        <option value="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/BeanContexHolder.java" />
-        <option value="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/service/ConsumerService.java" />
-        <option value="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/ConsumerSend.java" />
+        <option value="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/handle/MyAuthentionsuccessHandler.java" />
+        <option value="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/annation/MqTag.java" />
+        <option value="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/enums/MqTopicEnum.java" />
+        <option value="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/init/ApplicationInitConsumer.java" />
+        <option value="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/annation/MqListener.java" />
         <option value="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/ConsumerReceive.java" />
-        <option value="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/init/InitConsumer.java" />
-        <option value="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/config/RocketMqConfig.java" />
-        <option value="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/ConsumerHandler.java" />
-        <option value="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/config/ProducerConfig.java" />
+        <option value="$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/ConsumerSend.java" />
+        <option value="$PROJECT_DIR$/optim-basics-infrastucture/src/main/java/com/hgz/optim/entity/UserEntity.java" />
+        <option value="$PROJECT_DIR$/optim-basics-domain/src/main/java/com/hgz/optim/service/UserService.java" />
+        <option value="$PROJECT_DIR$/optim-basics-infrastucture/src/main/java/com/hgz/optim/jpa/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/optim-basics-domain/src/main/java/com/hgz/optim/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/config/AuthorizationServer.java" />
+        <option value="$PROJECT_DIR$/optim-basics-oauth2/src/test/java/com/hgz/optim/UserTest.java" />
+        <option value="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/optim-basics-web/pom.xml" />
+        <option value="$PROJECT_DIR$/optim-basics-bean/src/main/java/com/hgz/bean/dto/UserDto.java" />
+        <option value="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/EncryptUtil.java" />
+        <option value="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/filter/TokenAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/controller/TestController.java" />
         <option value="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/util/RocketMqProducerUtil.java" />
         <option value="$PROJECT_DIR$/optim-basics-web/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/jackson/JacksonSensitive.java" />
-        <option value="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/jackson/SensitiveStrategy.java" />
-        <option value="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/jackson/JacksonSensitive.java" />
-        <option value="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/jackson/SensitiveJsonSerializer.java" />
-        <option value="$PROJECT_DIR$/optim-basics-infrastucture/src/main/java/com/hgz/optim/entity/UserEntity.java" />
-        <option value="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/jackson/SensitiveStrategy.java" />
-        <option value="$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/entity/UserEntity.java" />
-        <option value="$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/service/SendService.java" />
-        <option value="$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/service/CbcSendServiceImpl.java" />
-        <option value="$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/service/NbcSendServiceImpl.java" />
-        <option value="$PROJECT_DIR$/optim-basics-tool/pom.xml" />
-        <option value="$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/config/InitConfig.java" />
-        <option value="$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/entity/User.java" />
-        <option value="$PROJECT_DIR$/optim-basics-tool/src/test/java/com/hgz/optim/SendTest.java" />
-        <option value="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/controller/SmsController.java" />
-        <option value="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/controller/BaseController.java" />
-        <option value="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/config/ResponseAdvice.java" />
-        <option value="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/config/ResouceServerConfig.java" />
+        <option value="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/config/TokenConfig.java" />
+        <option value="$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/ResouceServerConfig.java" />
+        <option value="$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/config/ResouceServerConfig.java" />
+        <option value="$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/TokenConfig.java" />
+        <option value="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/OauthApplication.java" />
+        <option value="$PROJECT_DIR$/optim-basics-gateway/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/MyCorsConfiguration.java" />
+        <option value="$PROJECT_DIR$/optim-basics-oauth2/pom.xml" />
+        <option value="$PROJECT_DIR$/optim-basics-oauth2/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/GateWayApplication.java" />
+        <option value="$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/optim-basics-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/config/TokenConfig.java" />
+        <option value="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/config/Swagger2Config.java" />
+        <option value="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/service/UserDetailsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/filter/AuthorizeFilter.java" />
+        <option value="$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/filter/TokenVerifyFilter.java" />
+        <option value="$PROJECT_DIR$/optim-basics-bean/src/main/java/com/hgz/bean/vo/EmailVo.java" />
+        <option value="$PROJECT_DIR$/optim-basics-sms/src/main/java/com/hgz/optim/controller/SmsController.java" />
+        <option value="$PROJECT_DIR$/optim-basics-sms/src/main/java/com/hgz/optim/service/SmsService.java" />
+        <option value="$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/config/ProducerConfig.java" />
+        <option value="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/msg/us/RocketMqProperties.java" />
+        <option value="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/msg/us/RocketMqConfig.java" />
+        <option value="$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/msg/us/ConsumerHandler.java" />
       </list>
     </option>
   </component>
@@ -244,14 +281,43 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="optim-basics-gateway" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="optim-basics-gateway" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="optim-basics-gateway" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.springframework.boot:spring-boot-starter-security:2.1.3.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="optim-basics-gateway" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.springframework.security:spring-security-jwt:1.0.10.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="optim-basics-gateway" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.springframework.security:spring-security-jwt:1.0.10.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="org.bouncycastle:bcpkix-jdk15on:1.60" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="626" />
-    <option name="y" value="197" />
-    <option name="width" value="1558" />
+    <option name="x" value="441" />
+    <option name="y" value="38" />
+    <option name="width" value="1414" />
     <option name="height" value="1052" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -269,62 +335,6 @@
               <item name="optim-basics-core" type="b2602c69:ProjectViewProjectNode" />
               <item name="optim-basics-core" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="optim-basics-core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optim-basics-core" type="462c0819:PsiDirectoryNode" />
-              <item name="optim-basics-gateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optim-basics-core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optim-basics-core" type="462c0819:PsiDirectoryNode" />
-              <item name="optim-basics-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optim-basics-core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optim-basics-core" type="462c0819:PsiDirectoryNode" />
-              <item name="optim-basics-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optim-basics-core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optim-basics-core" type="462c0819:PsiDirectoryNode" />
-              <item name="optim-basics-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optim-basics-core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optim-basics-core" type="462c0819:PsiDirectoryNode" />
-              <item name="optim-basics-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optim-basics-core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optim-basics-core" type="462c0819:PsiDirectoryNode" />
-              <item name="optim-basics-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hgz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optim-basics-core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="optim-basics-core" type="462c0819:PsiDirectoryNode" />
-              <item name="optim-basics-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hgz" type="462c0819:PsiDirectoryNode" />
-              <item name="optim" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -332,6 +342,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="directory" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -339,7 +350,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1659230072502" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1660373469227" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -347,22 +358,22 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.hgz.optim.entity" />
-      <recent name="com.hgz.optim" />
+      <recent name="com.hgz.optim.util" />
       <recent name="com.hgz.optim.config" />
-      <recent name="com.hgz.optim.service" />
-      <recent name="com.hgz.bean.vo" />
+      <recent name="com.hgz.optim.init" />
+      <recent name="com.hgz.optim.msg.us" />
+      <recent name="com.hgz.optim.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work2022\optim-basics-core\optim-basics-gateway\src\main\java\com\hgz\optim\config" />
+      <recent name="D:\work2022\optim-basics-core\optim-basics-common\src\main\java\com\hgz\optim\util" />
+      <recent name="D:\work2022\optim-basics-core\optim-basics-oauth2\src\main\resources\static" />
+      <recent name="D:\work2022\optim-basics-core\optim-basics-common\src\main\java\com\hgz\optim\msg\us" />
       <recent name="D:\work2022\optim-basics-core\optim-basics-common\src\main\java\com\hgz\optim" />
-      <recent name="D:\work2022\optim-basics-core\optim-basics-tool\src\main\resources" />
-      <recent name="D:\work2022\optim-basics-core\optim-basics-msg\src\main\resources" />
-      <recent name="D:\work2022\optim-basics-core\optim-basics-uat\src\main\resources" />
-      <recent name="D:\work2022\optim-basics-core\optim-basics-gateway\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -377,9 +388,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GateWayApplication">
-    <configuration name="SendTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="optim-basics-tool" />
+  <component name="RunManager" selected="Spring Boot.OauthApplication">
+    <configuration name="UserTest.password" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="optim-basics-oauth2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hgz.optim.*" />
@@ -387,9 +398,32 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.hgz.optim" />
-      <option name="MAIN_CLASS_NAME" value="com.hgz.optim.SendTest" />
+      <option name="MAIN_CLASS_NAME" value="com.hgz.optim.UserTest" />
+      <option name="METHOD_NAME" value="password" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="optim-basics-oauth2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hgz.optim.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hgz.optim" />
+      <option name="MAIN_CLASS_NAME" value="com.hgz.optim.UserTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="optim-basics-design-mode" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hgz.optim.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -407,14 +441,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MsgApplaction" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="MsgApplaction" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="optim-basics-msg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hgz.optim.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hgz.optim.MsgApplaction" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -440,6 +468,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UatApplaction" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="optim-basics-uat" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hgz.optim.UatApplaction" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WebApplaction" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="optim-basics-web" />
       <extension name="coverage">
@@ -455,8 +490,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SendTest.test" />
+      <item itemvalue="JUnit.UserTest.password" />
+      <item itemvalue="JUnit.UserTest.test" />
       <item itemvalue="Spring Boot.OauthApplication" />
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Spring Boot.UatApplaction" />
       <item itemvalue="Spring Boot.MsgApplaction" />
       <item itemvalue="Spring Boot.WebApplaction" />
       <item itemvalue="Spring Boot.SmsApplaction" />
@@ -465,10 +503,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.GateWayApplication" />
-        <item itemvalue="Spring Boot.SmsApplaction" />
         <item itemvalue="Spring Boot.WebApplaction" />
-        <item itemvalue="JUnit.SendTest.test" />
-        <item itemvalue="Spring Boot.MsgApplaction" />
+        <item itemvalue="Spring Boot.SmsApplaction" />
+        <item itemvalue="JUnit.UserTest.password" />
+        <item itemvalue="JUnit.UserTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -501,7 +539,16 @@
       <workItem from="1658627201463" duration="13416000" />
       <workItem from="1658751991681" duration="2371000" />
       <workItem from="1659170028701" duration="1531000" />
-      <workItem from="1659228306146" duration="923000" />
+      <workItem from="1659228306146" duration="4664000" />
+      <workItem from="1659443995605" duration="1571000" />
+      <workItem from="1659445594216" duration="70000" />
+      <workItem from="1659524842042" duration="3189000" />
+      <workItem from="1659751542882" duration="8985000" />
+      <workItem from="1659828389373" duration="10761000" />
+      <workItem from="1660132568817" duration="8260000" />
+      <workItem from="1660219189223" duration="4480000" />
+      <workItem from="1660304775823" duration="8539000" />
+      <workItem from="1660349485830" duration="8984000" />
     </task>
     <task id="LOCAL-00001" summary="提交网关">
       <created>1658232828374</created>
@@ -510,49 +557,64 @@
       <option name="project" value="LOCAL" />
       <updated>1658232828374</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="swagger网关统一管理">
+      <created>1659230155111</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659230155111</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserTest_insert - 2022.07.22 at 21h 25m 18s.xml">
-      <configuration name="UserTest.insert" configurationId="JUnit" />
+    <history-entry file="HandlerTest_test - 2022.07.31 at 10h 32m 01s.xml">
+      <configuration name="HandlerTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_insertList - 2022.07.22 at 21h 32m 36s.xml">
-      <configuration name="UserTest.insertList" configurationId="JUnit" />
+    <history-entry file="HandlerTest_test - 2022.07.31 at 10h 36m 07s.xml">
+      <configuration name="HandlerTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_update - 2022.07.22 at 22h 02m 02s.xml">
-      <configuration name="UserTest.update" configurationId="JUnit" />
+    <history-entry file="UserTest_password - 2022.08.10 at 21h 18m 20s.xml">
+      <configuration name="UserTest.password" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_update - 2022.07.22 at 22h 02m 59s.xml">
-      <configuration name="UserTest.update" configurationId="JUnit" />
+    <history-entry file="UserTest_password - 2022.08.10 at 21h 22m 51s.xml">
+      <configuration name="UserTest.password" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_update - 2022.07.22 at 22h 04m 10s.xml">
-      <configuration name="UserTest.update" configurationId="JUnit" />
+    <history-entry file="UserTest_password - 2022.08.10 at 21h 23m 42s.xml">
+      <configuration name="UserTest.password" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_update - 2022.07.22 at 22h 05m 02s.xml">
-      <configuration name="UserTest.update" configurationId="JUnit" />
+    <history-entry file="UserTest_password - 2022.08.10 at 21h 24m 40s.xml">
+      <configuration name="UserTest.password" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_update - 2022.07.22 at 22h 05m 44s.xml">
-      <configuration name="UserTest.update" configurationId="JUnit" />
+    <history-entry file="UserTest_password - 2022.08.10 at 21h 25m 11s.xml">
+      <configuration name="UserTest.password" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SendTest_test - 2022.07.24 at 19h 03m 18s.xml">
-      <configuration name="SendTest.test" configurationId="JUnit" />
+    <history-entry file="UserTest_test - 2022.08.10 at 21h 26m 30s.xml">
+      <configuration name="UserTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SendTest_test - 2022.07.24 at 19h 04m 36s.xml">
-      <configuration name="SendTest.test" configurationId="JUnit" />
+    <history-entry file="UserTest_password - 2022.08.10 at 22h 36m 50s.xml">
+      <configuration name="UserTest.password" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SendTest_test - 2022.07.24 at 19h 05m 19s.xml">
-      <configuration name="SendTest.test" configurationId="JUnit" />
+    <history-entry file="UserTest_password - 2022.08.10 at 22h 39m 20s.xml">
+      <configuration name="UserTest.password" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106838000" />
+    <option name="totallyTimeSpent" value="165418000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17110874" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20735608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -562,25 +624,26 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37750557" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.52672607" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32850778" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29398665" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32962137" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.35746104" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32962137" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.2594655" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.2572383" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="JProfiler" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="15" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.45879734" />
+      <window_info anchor="bottom" id="Inspection Results" order="17" weight="0.63919824" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.23560767" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.47334754" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
@@ -632,406 +695,406 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="提交网关" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交网关" />
+    <MESSAGE value="swagger网关统一管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="swagger网关统一管理" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/config/BeanConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="102" column="44" lean-forward="true" selection-start-line="102" selection-start-column="44" selection-end-line="102" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-214">
-          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/config/RocketMqProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/Applaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/BeanContexHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/service/ConsumerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/MsgApplaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/ConsumerSend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/init/InitConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="29" column="45" lean-forward="true" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/ConsumerReceive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/consum/ConsumerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-msg/src/main/java/com/hgz/optim/config/RocketMqConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="38" column="79" lean-forward="true" selection-start-line="38" selection-start-column="79" selection-end-line="38" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/config/ProducerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-msg/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/util/RocketMqProducerUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-            <element signature="e#2249#2250#0" expanded="true" />
-            <element signature="e#2317#2318#0" expanded="true" />
-            <element signature="e#3195#3196#0" expanded="true" />
-            <element signature="e#3269#3270#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/Applaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/jackson/JacksonSensitive.java" />
-    <entry file="file://$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/jackson/SensitiveStrategy.java" />
-    <entry file="file://$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/jackson/SensitiveJsonSerializer.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.8/jackson-databind-2.9.8.jar!/com/fasterxml/jackson/databind/annotation/JsonSerialize.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/jackson/JacksonSensitive.java" />
-    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/jackson/JacksonSensitive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/jackson/SensitiveJsonSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-348">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/jackson/SensitiveStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/ConverterFieldUtil.java">
+    <entry file="file://$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/config/ResouceServerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/service/AddressService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/entity/BaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-infrastucture/src/main/java/com/hgz/optim/entity/UserEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-bean/src/main/java/com/hgz/bean/vo/UserVo.java">
+    <entry file="file://$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/config/TokenConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="208">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/config/MyCorsConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/config/ResouceServerConfig.java" />
+    <entry file="file://$PROJECT_DIR$/optim-basics-sms/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/OauthApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/TokenConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/MyCorsConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-oauth2/src/test/java/com/hgz/optim/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="54" column="55" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/optim-basics-oauth2/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        <state relative-caret-position="55">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/config/InitConfig.java">
+    <entry file="file://$PROJECT_DIR$/optim-basics-oauth2/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="226">
+          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-tool/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-domain/src/main/java/com/hgz/optim/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-uat/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1118">
-          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/service/CbcSendServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/service/SendService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-tool/src/main/java/com/hgz/optim/service/NbcSendServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-tool/src/test/java/com/hgz/optim/SendTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ResponseBodyAdvice.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/config/ResponseAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1014">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/controller/SmsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/controller/StudentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1352">
-          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/exception/ExceptionControllerAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-sms/src/main/java/com/hgz/optim/SmsApplaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-web/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/controller/SwaggerResourceController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <caret line="38" selection-start-line="37" selection-end-line="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/optim-basics-sms/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/service/SwaggerHeaderFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        <state relative-caret-position="362">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/service/SwaggerProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/config/Swagger2Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="62" column="52" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/WebSecurityConfig.java" />
+    <entry file="file://$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/config/ResouceServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/GateWayApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="260">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-gateway/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="27" column="67" lean-forward="true" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/util/EncryptUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/service/UserDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/filter/TokenAuthenticationFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-gateway/src/main/java/com/hgz/optim/filter/AuthorizeFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="758">
+          <caret line="59" column="16" lean-forward="true" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/config/AuthorizationServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="102" column="22" lean-forward="true" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/filter/TokenVerifyFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="78" column="49" lean-forward="true" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/config/Swagger2Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="59" column="25" lean-forward="true" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-oauth2/src/main/java/com/hgz/optim/config/TokenConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-bean/src/main/java/com/hgz/bean/vo/EmailVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-556">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-sms/src/main/java/com/hgz/optim/controller/SmsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="59" column="18" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-sms/src/main/java/com/hgz/optim/service/SmsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-sms/src/main/java/com/hgz/optim/config/Swagger2Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/config/ResponseAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/init/ApplicationInitConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-web/src/main/java/com/hgz/optim/config/ProducerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/msg/us/ConsumerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/msg/us/ConsumerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/msg/us/RocketMqConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/msg/us/RocketMqProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/jpa/BaseRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/enums/MqTopicEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/BeanContexHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/ConverterFieldUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/EncryptUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-946">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/optim-basics-common/src/main/java/com/hgz/optim/util/FreeMarkerUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
