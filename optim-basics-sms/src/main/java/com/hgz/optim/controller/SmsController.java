@@ -4,7 +4,6 @@ import com.hgz.bean.vo.EmailVo;
 import com.hgz.optim.service.SmsService;
 import com.hgz.optim.util.Result;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.bind.annotation.*;

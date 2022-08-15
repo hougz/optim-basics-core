@@ -23,7 +23,10 @@ import javax.annotation.Resource;
 public class RocketMqConfig {
 
     @Resource
-    private RocketMqProperties rocketMqProperties;
+    private RocketConsumeProperties rocketMqProperties;
+
+    @Resource
+    private RocketProducerProperites rocketProducerProperites;
 
     /**
      * 构建消费者
@@ -104,8 +107,8 @@ public class RocketMqConfig {
     @Bean
     @ConditionalOnProperty("rocketmq.producer.isOnOff")
     public DefaultMQProducer defaultMQProducer() throws Exception {
-        DefaultMQProducer producer = new DefaultMQProducer("producer%basics%default");
-        producer.setNamesrvAddr(rocketMqProperties.getNamesrvAddr());
+        DefaultMQProducer producer = new DefaultMQProducer(rocketProducerProperites.getGroupName());
+        producer.setNamesrvAddr(rocketProducerProperites.getNamesrvAddr());
         producer.setInstanceName("producer");
         producer.start();
         return producer;

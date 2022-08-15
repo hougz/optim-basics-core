@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 @Setter
 @ToString
 @ConfigurationProperties(prefix = "rocketmq.consumer")
-public class RocketMqProperties {
+public class RocketConsumeProperties {
 
     private String groupName;
 

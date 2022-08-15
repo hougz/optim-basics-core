@@ -6,19 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="optim-basics-bean" />
-        <module name="optim-basics-common" />
-        <module name="optim-basics-design-mode" />
-        <module name="optim-basics-domain" />
-        <module name="optim-basics-feign" />
-        <module name="optim-basics-gateway" />
-        <module name="optim-basics-infrastucture" />
         <module name="optim-basics-msg" />
         <module name="optim-basics-oauth2" />
+        <module name="optim-basics-infrastucture" />
+        <module name="optim-basics-bean" />
         <module name="optim-basics-sms" />
+        <module name="optim-basics-web" />
+        <module name="optim-basics-common" />
+        <module name="optim-basics-feign" />
+        <module name="optim-basics-domain" />
+        <module name="optim-basics-design-mode" />
+        <module name="optim-basics-gateway" />
         <module name="optim-basics-tool" />
         <module name="optim-basics-uat" />
-        <module name="optim-basics-web" />
       </profile>
     </annotationProcessing>
   </component>

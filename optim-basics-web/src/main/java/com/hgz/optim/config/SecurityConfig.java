@@ -14,6 +14,20 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
+    private static final String[] excludedAuthPages = {
+            "/auth/login",
+            "/doc.html",
+            "/webjars/**",
+            "/v2/api-docs",
+            //这个和下面两个要加上，否则无法访问后台api
+            "/sys/v2/api-docs",
+            "/auth/v2/api-docs",
+            "/swagger-resources/configuration/ui",
+            "/swagger-resources",
+            "/swagger-resources/configuration/security",
+            "/swagger-ui.html"
+    };
+
     /**
      * 安全拦截机制（最重要）
      *
@@ -26,6 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 //所有/api/v1/**的请求必须认证通过
                 .antMatchers("/api/v1/**").authenticated()
+                .antMatchers(excludedAuthPages).permitAll()
                 //除了/r/**，其它的请求可以访问
                 .anyRequest().permitAll()
         ;

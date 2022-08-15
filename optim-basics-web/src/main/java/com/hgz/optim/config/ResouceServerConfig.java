@@ -23,6 +23,21 @@ public class ResouceServerConfig extends ResourceServerConfigurerAdapter {
     @Autowired
     TokenStore tokenStore;
 
+
+    private static final String[] excludedAuthPages = {
+            "/auth/login",
+            "/doc.html",
+            "/webjars/**",
+            "/v2/api-docs",
+            //这个和下面两个要加上，否则无法访问后台api
+            "/sys/v2/api-docs",
+            "/auth/v2/api-docs",
+            "/swagger-resources/configuration/ui",
+            "/swagger-resources",
+            "/swagger-resources/configuration/security",
+            "/swagger-ui.html"
+    };
+
     @Override
     public void configure(ResourceServerSecurityConfigurer resources) {
         //资源 id
@@ -34,7 +49,8 @@ public class ResouceServerConfig extends ResourceServerConfigurerAdapter {
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/**").access("#oauth2.hasScope('ROLE_ADMIN')")
+                .antMatchers("/api/v1").access("#oauth2.hasScope('ROLE_ADMIN')")
+                .antMatchers(excludedAuthPages).permitAll()
                 .and().csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
     }
