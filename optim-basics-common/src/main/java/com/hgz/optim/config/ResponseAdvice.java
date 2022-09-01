@@ -50,6 +50,9 @@ public class ResponseAdvice implements ResponseBodyAdvice<Object> {
         if (o instanceof Result) {
             return o;
         }
+        if(o instanceof byte[]){
+            return o;
+        }
         return Result.success(o);
     }
 }

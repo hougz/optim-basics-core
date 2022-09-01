@@ -13,9 +13,6 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.Arrays;
-import java.util.List;
-
-import static com.google.common.collect.Lists.newArrayList;
 
 @Configuration
 @EnableSwagger2
@@ -47,7 +44,7 @@ public class Swagger2Config {
 
     private SecurityScheme securityScheme() {
         GrantType grant = new ResourceOwnerPasswordCredentialsGrant("http://localhost:8090/oauth/token");
-        return new OAuthBuilder().name("OAuth2")
+        return new OAuthBuilder().name("Authorization")
                 .grantTypes(Arrays.asList(grant))
                 .scopes(Arrays.asList(scopes()))
                 .build();
@@ -55,7 +52,7 @@ public class Swagger2Config {
 
     private SecurityContext securityContext() {
         return SecurityContext.builder()
-                .securityReferences(Arrays.asList(new SecurityReference("OAuth2", scopes())))
+                .securityReferences(Arrays.asList(new SecurityReference("Authorization", scopes())))
                 .forPaths(PathSelectors.any())
                 .build();
     }

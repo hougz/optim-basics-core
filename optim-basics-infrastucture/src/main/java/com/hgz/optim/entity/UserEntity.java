@@ -22,4 +22,5 @@ public class UserEntity extends BaseEntity {
     private String mobile;
 
     private String status;
+
 }

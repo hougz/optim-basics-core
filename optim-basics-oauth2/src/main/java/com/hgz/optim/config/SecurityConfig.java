@@ -1,5 +1,6 @@
 package com.hgz.optim.config;
 
+import com.hgz.optim.filter.TokenVerifyFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -63,20 +64,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         //关闭防火
-       /* http.csrf().disable()
-                .authorizeRequests()
-                .antMatchers("/api/**").hasAnyAuthority("p1")
-                //放行授权服务器的几个端点请求、登录请求、登出请求。
-                .antMatchers("/login/**", "/error.html")
-                .permitAll()
-                .anyRequest().authenticated()
-                .and()
-                .formLogin()
-                .loginProcessingUrl("/login")
-                .loginPage("/login.html")
-                //登录成功后
-                .successForwardUrl("/toMain")
-                .failureForwardUrl("/toError");*/
         http.csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/api/v1").hasAnyAuthority("p1")
@@ -85,5 +72,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .formLogin()
         ;
+        http.addFilter(new TokenVerifyFilter(super.authenticationManager()));
+
     }
 }
